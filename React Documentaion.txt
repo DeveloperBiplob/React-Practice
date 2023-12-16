@@ -1,0 +1,12 @@
+---------------------------------------REACT DOCUMENTAION-------------------------------------
+1. Create a React Project - npm create vite/ npm create vite@latest
+2. Add React Application Bulid Mode - npx vite build
+3. Immediately-Invoked Function- {(()=>{})()} // Esily javascript likhte parbo.
+      {(()=> {
+        if(mark > 80 && mark <= 100){
+          return <h1>A+</h1>
+        }else if(mark >= 70 && mark <79){
+          return <h1>A</h1>
+        }
+      })()}
+4.
