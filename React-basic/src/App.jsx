@@ -3,6 +3,7 @@ import Hero from "./component/Hero";
 import { useRef, useState } from 'react';
 import ListForm from "./component/ListForm";
 import ContactForm from "./component/ContactForm";
+import UseEffectPage from "./component/UseEffectPage";
 
 const App = () => {
 
@@ -114,6 +115,7 @@ const deleteList = (index)=>{
   return (
     <div>
       <Header/>
+      <UseEffectPage/>
       <ContactForm/>
       <ListForm/>
       <Hero obj = {obj} alert = {warning}/>
