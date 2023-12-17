@@ -4,6 +4,10 @@ import { useRef, useState } from 'react';
 import ListForm from "./component/ListForm";
 import ContactForm from "./component/ContactForm";
 import UseEffectPage from "./component/UseEffectPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Service from "./pages/Service";
 
 const App = () => {
 
@@ -114,7 +118,16 @@ const deleteList = (index)=>{
 
   return (
     <div>
-      <Header/>
+
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/service" element={<Service/>} />
+      </Routes>
+      </BrowserRouter>
+      {/* <Header/> */}
+
       <UseEffectPage/>
       <ContactForm/>
       <ListForm/>
